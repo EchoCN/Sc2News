@@ -1,0 +1,10 @@
+<!--wxml是小程序的骨架吧-->
+<view class="container">
+<image class="user-img" mode="aspectFill" src="../images/img1.png"></image>
+<view class="moto-border1" bindtap="onContext">
+<text class="moto" bindtap="onContext">留言板</text>
+</view>
+<view class="moto-border" bindtap="onTap">
+<text class="moto" bindtap="onTap">进入星际争霸</text>
+</view>
+</view>

@@ -1,0 +1,6 @@
+<!--pages/news/news-about/news-about.wxml-->
+    <view class="flex-column" style="display:flex;flex-direction: column;" >
+        <view class="flex-view-item">{{ content }}</view>
+        <view class="flex-view-item">{{ author }}</view>
+        <view class="flex-view-item">{{ created_time }}</view>
+    </view>

@@ -1,0 +1,17 @@
+<!--pages/contexts/contexts.wxml-->
+<!-- <text>pages/contexts/contexts.wxml</text> -->
+<view class="msg-box">
+
+   <view class="send-box">
+       <input bindinput="changeInputValue" class="input" type="text" value="{{ inputVal }}"
+       placeholder="对本项目欢迎提出意见...." placeholder-class="place-input"/>
+        <button size="mini" type="primary" bindtap="addMsg">添加</button>
+    </view>
+    <text class="msg-info" wx:if="{{ msgData.length==0 }}">暂无留言...</text>
+    <view class="list-view">
+       <view class="item" wx:for="{{ msgData }}" wx:key="{{ index }}">
+       <text class="text1">{{ item.msg }}</text>
+       <icon type="cancel" bindtap="DelMsg" data-index="{{ index }}" class="close-b"/>
+       </view>
+       </view>
+       </view>

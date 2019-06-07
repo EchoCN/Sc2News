@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/welcome/welcome",
+    "pages/news/news",
+    "pages/news/news-about/news-about",
+    "pages/contexts/contexts"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

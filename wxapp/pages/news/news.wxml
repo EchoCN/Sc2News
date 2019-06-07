@@ -1,0 +1,21 @@
+<!--pages/news/news.wxml-->
+<!--<import src="../news-item/news-item-template.wxml"/>-->
+<view>
+  <swiper class="banner" indicator-dots="true" autoplay="true" cirular="true">
+    <swiper-item>
+      <image src="../images/img2.jpg"></image>
+    </swiper-item>
+      <swiper-item>
+      <image src="../images/img3.jpg"></image>
+    </swiper-item>
+      <swiper-item>
+      <image src="../images/sc2banner.jpg"></image>
+    </swiper-item>  
+  </swiper>
+  <text class='title'>❥新闻标题</text>
+  <block wx:for="{{result}}" wx:for-item="result">
+    <view class="flex-column" catchtap="OnPost" data-id="{{result.id}}" data-content="{{ result.content }}" data-author="{{ result.author }}" data-created_time="{{ result.created_time }}">
+        <view class="flex-view-item">{{ result.title }}</view>
+    </view>
+  </block>
+</view>
